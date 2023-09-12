@@ -26,7 +26,6 @@ function pogovorkaFM() {
      let selector2 = document.getElementById(`author`)
      selector.innerText = 'С сегодняшнего дня счет = ' + Math.ceil(summaToday)
      selector2.innerText = ' 9550 делим на ' + numdaysInMonth + ', умножаем на оставшиеся ' + ostatokToday + ' дней и прибавляем 450'
-
 }
 
 function pogovorkaFM2() {
