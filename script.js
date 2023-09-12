@@ -21,10 +21,6 @@ let summaPerDay = Math.floor(9550 / numdaysInMonth)
 let summaToday = summaPerDay * ostatok + 450
 let summaTomorrow = summaPerDay * ostatokTomorrow + 450
 
-
-alert( summaToday );
-
-
 function pogovorkaFM() {
      let selector = document.getElementById(`joke`)
      let selector2 = document.getElementById(`author`)
