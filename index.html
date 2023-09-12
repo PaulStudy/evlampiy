@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JokeGenerator</title>
+    <link rel="stylesheet" href="other/normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <link type="image/x-icon" rel="shortcut icon" href="img/favicon.ico">
+</head>
+
+<body>
+    <header>
+        <span>Генератор счета</span>
+    </header>
+    <main class="main">
+        <p id="joke">Высчитываем счет для клиента</p>
+        <p id="author">Описание</p>
+        <button class="knopka" onclick="pogovorkaFM()">Активация сегодня</button>
+        <button class="knopka" onclick="pogovorkaFM2()">Активация завтра</button>
+
+        <p class="text">Генератор, который берёт сегодняшнее число, и в зависимости от него высчитывает счет для клиента</p>
+        <p class="text">Расчет: 9550 делённое на КОЛИЧЕСТВО ДНЕЙ В МЕСЯЦЕ умноженное на КОЛИЧЕСТВО ОСТАВШИХСЯ ДНЕЙ прибавить 450</p>
+    </main>
+    <footer>
+        <div class="a-git-wrap">
+            <a class="a-git" href="https://github.com/PaulStudy">2023 Синий Трактор</a>
+        </div>
+        <div class="a-rss-wrap">
+            <a class="a-rss" href=""><img class="a-rss-img" src=""
+                    alt="Евлампий"></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
