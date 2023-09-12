@@ -14,7 +14,7 @@ let today = new Date();
 let num_month = today . getMonth() +1 ; 
 let num_today = today . getDate()
 let numdaysInMonth = daysInMonth(num_month , year)
-let ostatok = numdaysInMonth-num_today-1
+let ostatok = numdaysInMonth-num_today+1
 let ostatokTomorrow = ostatok - 1
 
 let summaPerDay = Math.floor(9550 / numdaysInMonth)
