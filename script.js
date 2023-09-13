@@ -1,4 +1,5 @@
-var now = new Date();
+let now = new Date();
+let cost = 9550
 
 function random(min, max) {
     let randomIndex = Math.random() * (max - min);
@@ -17,20 +18,20 @@ let numdaysInMonth = daysInMonth(num_month , year)
 let ostatok = numdaysInMonth-num_today
 let ostatokToday = ostatok + 1
 
-let summaPerDay = 9550 / numdaysInMonth
+let summaPerDay = cost / numdaysInMonth
 let summaToday = summaPerDay * ostatokToday + 450
 let summaTomorrow = summaPerDay * ostatok + 450
 
-function pogovorkaFM() {
+function calcVal() {
      let selector = document.getElementById(`joke`)
      let selector2 = document.getElementById(`author`)
-     selector.innerText = 'С сегодняшнего дня счет = ' + Math.ceil(summaToday)
-     selector2.innerText = ' 9550 делим на ' + numdaysInMonth + ', умножаем на оставшиеся ' + ostatokToday + ' дней и прибавляем 450'
+     selector.innerText = 'С сегодняшнего дня счет = ' + Math.ceil(summaToday / 100) * 100
+     selector2.innerText = cost + 'р / ' + numdaysInMonth + ' дней, * ' + ostatokToday + ' дней, + 450р = ' + summaToday.toFixed(2) + ' р.'
 }
 
-function pogovorkaFM2() {
+function calcVal2() {
     let selector = document.getElementById(`joke`)
     let selector2 = document.getElementById(`author`)
-    selector.innerText = 'С завтрашнего дня счет = ' + Math.ceil(summaTomorrow)
-    selector2.innerText = ' 9550 делим на ' + numdaysInMonth + ', умножаем на оставшиеся с завтрашнего дня ' + ostatok + ' дней и прибавляем 450'
+    selector.innerText = 'С завтрашнего дня счет = ' + Math.ceil(summaTomorrow / 100) * 100
+    selector2.innerText = cost + 'р / ' + numdaysInMonth + ' дней, * ' + ostatok + ' дней, + 450р = ' + summaTomorrow.toFixed(2) + ' р.'
 }
