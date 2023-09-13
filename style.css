@@ -58,6 +58,14 @@ main {
   margin: auto0 15%;
 }
 
+.text2 {
+  color: gray;
+  text-align: center;
+  margin: auto0 15%;
+  font-size: 20x;
+  font-weight: normal;
+}
+
 footer {
   display: flex;
   flex-direction: row;
