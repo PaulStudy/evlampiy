@@ -1,10 +1,10 @@
 let now = new Date();
 let cost = 9550
 
-function random(min, max) {
-    let randomIndex = Math.random() * (max - min);
-    return Math.floor(randomIndex);
-}
+// function random(min, max) {
+//     let randomIndex = Math.random() * (max - min);
+//     return Math.floor(randomIndex);
+// }
 
 function daysInMonth (month, year) {
 return new Date(year, month, 0).getDate();
