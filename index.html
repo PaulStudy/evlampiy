@@ -17,21 +17,16 @@
     </header>
     <main class="main">
         <p id="joke">Высчитываем счет для клиента</p>
-        <p id="author">Описание</p>
-        <button class="knopka" onclick="pogovorkaFM()">Активация сегодня</button>
-        <button class="knopka" onclick="pogovorkaFM2()">Активация завтра</button>
+        <p id="author">Расчитать:</p>
+        <button class="knopka" onclick="calcVal()">Активация сегодня</button>
+        <button class="knopka" onclick="calcVal2()">Активация завтра</button>
 
-        <p class="text">Генератор, который берёт сегодняшнее число, и в зависимости от него высчитывает счет для клиента</p>
-        <p class="text">Расчет: 9550 делённое на КОЛИЧЕСТВО ДНЕЙ В МЕСЯЦЕ умноженное на КОЛИЧЕСТВО ОСТАВШИХСЯ ДНЕЙ прибавить 450</p>
+        <p class="text">Генератор, который берёт сегодняшнее число, и в зависимости от него высчитывает счет для клиента, округляя его</p>
+        <p class="text2">Расчет: 9550 делённое на КОЛИЧЕСТВО ДНЕЙ В ЭТОМ МЕСЯЦЕ умноженное на КОЛИЧЕСТВО ОСТАВШИХСЯ ДНЕЙ прибавить 450, затем ОКРУГЛИТЬ до СОТЕН в БОЛЬШУЮ сторону</p>
     </main>
     <footer>
         <div class="a-git-wrap">
             <a class="a-git" href="https://github.com/PaulStudy">2023 Евлампий</a>
-        </div>
-        <div class="a-rss-wrap">
-            <a class="a-rss" href=""><img class="a-rss-img" src=""
-                    alt="Евлампий"></a>
-        </div>
     </footer>
 
     <script src="script.js"></script>
