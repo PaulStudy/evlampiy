@@ -1,12 +1,13 @@
 body {
   display: flex;
   flex-direction: column;
-  width: 100vw;
+  width:100%;
   height: 100vh;
   background-color: black;
   font-size: 20px;
   font-weight: bold;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  
 }
 
 header {
@@ -26,42 +27,41 @@ main {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background-size: cover;
   background-position-y: center;
   background-position-x: center;
   transition: all 0.3s ease;
+  align-content: center;
 }
 
 #joke {
   text-align: center;
   font-size: larger;
-  margin: 100px auto 25px auto;
-  height: 50px;
   color: white;
 }
 
 #author {
   text-align: right;
-  margin: 25px auto;
+  align-self: center;
   color: gray;
 }
 
 .knopka {
   align-self: center;
-  width: 100px;
-  margin: 10px auto 25px auto;
+  width: 300px;
+  margin: 15px;
 }
 
 .text {
   color: gray;
   text-align: center;
-  margin: auto0 15%;
 }
 
 .text2 {
   color: gray;
   text-align: center;
-  margin: auto0 15%;
   font-size: 20x;
   font-weight: normal;
 }
