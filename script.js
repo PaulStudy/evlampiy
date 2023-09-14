@@ -32,6 +32,12 @@ function calcVal() {
 function calcVal2() {
     let selector = document.getElementById(`joke`)
     let selector2 = document.getElementById(`author`)
-    selector.innerText = 'С завтрашнего дня счет = ' + Math.ceil(summaTomorrow / 100) * 100
-    selector2.innerText = cost + 'р / ' + numdaysInMonth + ' дней, * ' + ostatok + ' дней, + 450р = ' + summaTomorrow.toFixed(2) + ' р.'
+    if (ostatok > 0) {
+        selector.innerText = 'С завтрашнего дня счет = ' + Math.ceil(summaTomorrow / 100) * 100
+        selector2.innerText = cost + 'р / ' + numdaysInMonth + ' дней, * ' + ostatok + ' дней, + 450р = ' + summaTomorrow.toFixed(2) + ' р.'
+      } else {
+        selector.innerText = 'С завтрашнего дня счет = 10000'
+        selector2.innerText = 'Завтра начинается новый месяц, счет 10000 р.'
+      }
+
 }
