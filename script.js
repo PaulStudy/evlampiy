@@ -23,21 +23,20 @@ let summaToday = summaPerDay * ostatokToday + 450
 let summaTomorrow = summaPerDay * ostatok + 450
 
 function calcVal() {
-     let selector = document.getElementById(`joke`)
-     let selector2 = document.getElementById(`author`)
-     selector.innerText = 'С сегодняшнего дня счет = ' + Math.ceil(summaToday / 100) * 100
-     selector2.innerText = cost + 'р / ' + numdaysInMonth + ' дней, * ' + ostatokToday + ' дней, + 450р = ' + summaToday.toFixed(2) + ' р.'
+  let selector = document.getElementById(`cost`)
+  let selector2 = document.getElementById(`costDescription`)
+  selector.innerText = 'С сегодняшнего дня счет = ' + Math.ceil(summaToday / 100) * 100
+  selector2.innerText = cost + 'р / ' + numdaysInMonth + ' дней, * ' + ostatokToday + ' дней, + 450р = ' + summaToday.toFixed(2) + ' р., в день = ' + summaPerDay.toFixed(2)
 }
 
 function calcVal2() {
-    let selector = document.getElementById(`joke`)
-    let selector2 = document.getElementById(`author`)
-    if (ostatok > 0) {
-        selector.innerText = 'С завтрашнего дня счет = ' + Math.ceil(summaTomorrow / 100) * 100
-        selector2.innerText = cost + 'р / ' + numdaysInMonth + ' дней, * ' + ostatok + ' дней, + 450р = ' + summaTomorrow.toFixed(2) + ' р.'
-      } else {
-        selector.innerText = 'С завтрашнего дня счет = 10000'
-        selector2.innerText = 'Завтра начинается новый месяц, счет 10000 р.'
-      }
-
+  let selector = document.getElementById(`cost`)
+  let selector2 = document.getElementById(`costDescription`)
+  if (ostatok > 0) {
+    selector.innerText = 'С завтрашнего дня счет = ' + Math.ceil(summaTomorrow / 100) * 100
+    selector2.innerText = cost + 'р / ' + numdaysInMonth + ' дней, * ' + ostatok + ' дней, + 450р = ' + summaTomorrow.toFixed(2) + ' р., в день = ' + summaPerDay.toFixed(2)
+  } else {
+    selector.innerText = 'С завтрашнего дня счет = 10000'
+    selector2.innerText = 'Завтра начинается новый месяц, счет 10000р.'
+  }
 }
